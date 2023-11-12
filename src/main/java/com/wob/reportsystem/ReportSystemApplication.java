@@ -26,7 +26,7 @@ public class ReportSystemApplication {
 
     static UserManager propertiesUserManager() {
         PropertiesUserManagerFactory userManagerFactory = new PropertiesUserManagerFactory();
-        userManagerFactory.setFile(new File("/Users/miki/Desktop/Projects/report-system/src/main/resources/users.properties"));
+        userManagerFactory.setFile(new File("/Users/miki/Desktop/report-system/src/main/resources/users.properties"));
         userManagerFactory.setPasswordEncryptor(new ClearTextPasswordEncryptor());
         UserManager userManager = userManagerFactory.createUserManager();
         return userManager;
